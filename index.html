@@ -7,6 +7,9 @@
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f4f4f4; }
     header { background: #1f2937; color: white; padding: 2rem; text-align: center; }
+    nav { background: #374151; padding: 1rem; text-align: center; }
+    nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
     section { padding: 2rem; max-width: 900px; margin: auto; background: white; margin-bottom: 1rem; border-radius: 8px; }
     h1, h2, h3 { color: #1f2937; }
     ul { list-style-type: none; padding: 0; }
@@ -21,24 +24,33 @@
     <p>Computer Engineering Student | Biomedical Devices | Surgical Modeling</p>
   </header>
 
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#research">Research</a>
+    <a href="#skills">Skills</a>
+    <a href="#resume-contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm Mikaela Miranda — a Computer Engineering student passionate about biomedical devices, auditory prosthetics, and surgical modeling. I specialize in building assistive technologies through a combination of 3D modeling, electronics, and computational simulations.</p>
+  </section>
+
   <section id="projects">
     <h2>Projects</h2>
-
     <div class="project">
       <h3>3D Anatomical Ear Model</h3>
       <p>Created a 3D anatomical model of the ear, skull segment, and auditory canal by segmenting patient imaging data in ITK-SNAP and integrating components using SolidWorks for clinical visualization and surgical planning.</p>
     </div>
-
     <div class="project">
       <h3>Hydraulic Arm</h3>
       <p>Engineered a 3-joint hydraulic arm equipped with pressure sensors to achieve precise object manipulation up to 6 lbs. (Nov 2023)</p>
     </div>
-
     <div class="project">
       <h3>Audio Synthesizer</h3>
       <p>Designed and soldered electronic circuits for an audio synthesizer, incorporating sensors for pitch modulation based on object proximity. (Feb 2023)</p>
     </div>
-
     <div class="project">
       <h3>Machine Learning for Cochlear Implant Path Planning</h3>
       <p>Used a physical electrode wire to capture its bend geometry and dimensions. Photographed and analyzed the wire, integrating the data into a machine learning-enhanced path planning model for cochlear implant simulation.</p>
