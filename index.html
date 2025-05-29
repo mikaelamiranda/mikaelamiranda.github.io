@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mikaela Miranda | Engineering Portfolio</title>
   <style>
+    html { scroll-behavior: smooth; }
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f4f4f4; }
     header { background: #1f2937; color: white; padding: 2rem; text-align: center; }
-    nav { background: #374151; padding: 1rem; text-align: center; }
+    nav { background: #374151; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 1000; }
     nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: bold; }
     nav a:hover { text-decoration: underline; }
     section { padding: 2rem; max-width: 900px; margin: auto; background: white; margin-bottom: 1rem; border-radius: 8px; }
@@ -18,10 +19,10 @@
     footer { text-align: center; padding: 2rem; background: #1f2937; color: white; }
   </style>
 </head>
-<body>
+<body onload="location.href='#about'">
   <header>
     <h1>Mikaela Miranda</h1>
-    <p>Computer Engineering Student | Biomedical Devices | Surgical Modeling</p>
+    <p>Computer Engineering Student | Medical Devices | Surgical Modeling</p>
   </header>
 
   <nav>
@@ -34,8 +35,9 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Hi, I'm Mikaela Miranda — a Computer Engineering student passionate about biomedical devices, auditory prosthetics, and surgical modeling. I specialize in building assistive technologies through a combination of 3D modeling, electronics, and computational simulations.</p>
-  </section>
+<p>
+Hi, I'm Mikaela Miranda — a third-year Computer Engineering student with a passion for designing innovative medical devices and assistive technologies. My work focuses on combining engineering, research, and human-centered design to improve healthcare accessibility and quality of life.
+</p>
 
   <section id="projects">
     <h2>Projects</h2>
@@ -60,19 +62,24 @@
   <section id="research">
     <h2>Research</h2>
     <div class="research">
-      <h3>LSAMP Research Fellow – Cochlear Implant Path Planning</h3>
-      <p>Simulated the insertion of a life-sized cochlear implant electrode into a 3D printed pipe model of the temporal bone. Created detailed 3D models of the ear from MRI data using ITK-SNAP, refined in Blender and SolidWorks, and visualized with MATLAB.</p>
-      <p>Developed a custom Python script to process STL models, extract geometry, and integrate with MATLAB for centerline and path optimization. Simulations account for anatomical variability and aim to reduce surgical trauma.</p>
-      <p>Workflow includes: ITK-SNAP, Blender, SolidWorks, MATLAB, Trimesh, NumPy, and Matplotlib. Future work focuses on expanding compatibility with various cochlear devices and STL formats.</p>
-    </div>
+  <h3>LSAMP Research Fellow – Cochlear Implant Path Planning</h3>
+  <p>As a current LSAMP Research Fellow, I have introduced a machine learning component to an ongoing cochlear implant simulation project. I use physical electrode data to train a model that enhances the precision of path planning algorithms for cochlear insertion.</p>
+  <p>Future work focuses on enhancing device compatibility and further minimizing insertion trauma through anatomical adaptability and machine learning integration.</p>
+</div>
+
+<div class="research">
+  <h3>CVRC Undergraduate Research Assistant – Cochlear Implant Modeling</h3>
+  <p>Before joining LSAMP, I contributed to the same cochlear implant project as a research assistant in the CVRC lab. My focus was on foundational modeling, including MRI segmentation, anatomical 3D modeling, and simulation setup.</p>
+  <p>I developed anatomical models using ITK-SNAP, refined them in Blender and SolidWorks, and used MATLAB for visualization. I also built a Python script using Trimesh, NumPy, and Matplotlib to process STL files and explore early path planning strategies.</p>
+</div>
   </section>
 
   <section id="skills">
     <h2>Skills</h2>
     <ul>
-      <li>Python, MATLAB, C/C++, Git</li>
+      <li>Python, MATLAB, C/C++, Git, Machine Learning (TensorFlow, scikit-learn)</li>
       <li>SolidWorks, Blender, Fusion 360</li>
-      <li>ITK-SNAP, 3D Slicer</li>
+      <li>ITK-SNAP, 3D Slicer, MRI Analysis and Segmentation</li
       <li>Arduino, Circuit Design, Soldering</li>
     </ul>
   </section>
@@ -80,7 +87,7 @@
   <section id="resume-contact">
     <h2>Resume & Contact</h2>
     <a href="resume.pdf" target="_blank" class="button">View Resume</a>
-    <p>Email: <a href="mailto:mikaela@example.com">mikaela@example.com</a></p>
+    <p>Email: <a href="mailto:mikaelamirranda@gmail.com">mikaelamirranda@gmail.com</a></p>
     <p>GitHub: <a href="https://github.com/mikaelamiranda" target="_blank">mikaelamiranda</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/mikaelamiranda" target="_blank">linkedin.com/in/mikaelamiranda</a></p>
   </section>
