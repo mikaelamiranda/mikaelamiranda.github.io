@@ -5,91 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mikaela Miranda | Engineering Portfolio</title>
   <style>
-    html { scroll-behavior: smooth; }
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f4f4f4; }
     header { background: #1f2937; color: white; padding: 2rem; text-align: center; }
-    nav { background: #374151; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 1000; }
+    nav { background: #374151; padding: 1rem; text-align: center; }
     nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: bold; }
     nav a:hover { text-decoration: underline; }
-    section { padding: 2rem; max-width: 900px; margin: auto; background: white; margin-bottom: 1rem; border-radius: 8px; }
+    section { padding: 2rem; max-width: 900px; margin: auto; background: white; margin-top: 2rem; border-radius: 8px; }
     h1, h2, h3 { color: #1f2937; }
     ul { list-style-type: none; padding: 0; }
     .project, .research { margin-bottom: 1.5rem; }
     a.button { background: #1f2937; color: white; padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none; display: inline-block; margin-top: 1rem; }
     footer { text-align: center; padding: 2rem; background: #1f2937; color: white; }
+    iframe { width: 100%; height: 80vh; border: none; }
   </style>
+  <script>
+    function loadSection(section) {
+      document.getElementById("content-frame").src = section + ".html";
+    }
+    window.onload = function () {
+      loadSection("about");
+    };
+  </script>
 </head>
-<body onload="location.href='#about'">
+<body>
   <header>
     <h1>Mikaela Miranda</h1>
     <p>Computer Engineering Student | Medical Devices | Surgical Modeling</p>
   </header>
 
   <nav>
-    <a href="#about">About Me</a>
-    <a href="#projects">Projects</a>
-    <a href="#research">Research</a>
-    <a href="#skills">Skills</a>
-    <a href="#resume-contact">Contact</a>
+    <a href="#" onclick="loadSection('about')">About Me</a>
+    <a href="#" onclick="loadSection('projects')">Projects</a>
+    <a href="#" onclick="loadSection('research')">Research</a>
+    <a href="#" onclick="loadSection('skills')">Skills</a>
+    <a href="#" onclick="loadSection('resume')">Contact</a>
   </nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-<p>
-Hi, I'm Mikaela Miranda — a third-year Computer Engineering student with a passion for designing innovative medical devices and assistive technologies. My work focuses on combining engineering, research, and human-centered design to improve healthcare accessibility and quality of life.
-</p>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>3D Anatomical Ear Model</h3>
-      <p>Created a 3D anatomical model of the ear, skull segment, and auditory canal by segmenting patient imaging data in ITK-SNAP and integrating components using SolidWorks for clinical visualization and surgical planning.</p>
-    </div>
-    <div class="project">
-     <h3>Machine Learning for Cochlear Implant Path Planning</h3>
-      <p>Used a physical electrode wire to capture its bend geometry and dimensions. Photographed and analyzed the wire, integrating the data into a machine learning-enhanced path planning model for cochlear implant simulation.</p>
-    </div>
-      <h3>Hydraulic Arm</h3>
-      <p>Engineered a 3-joint hydraulic arm equipped with pressure sensors to achieve precise object manipulation up to 6 lbs.</p>
-    </div>
-    <div class="project">
-      <h3>Audio Synthesizer</h3>
-      <p>Designed and soldered electronic circuits for an audio synthesizer, incorporating sensors for pitch modulation based on object proximity. </p>
-    </div>
-    <div class="project">
-  </section>
-
-  <section id="research">
-    <h2>Research</h2>
-    <div class="research">
-  <h3>LSAMP Research Fellow – Cochlear Implant Path Planning</h3>
-  <p>As a current LSAMP Research Fellow, I have introduced a machine learning component to an ongoing cochlear implant simulation project. I use physical electrode data to train a model that enhances the precision of path planning algorithms for cochlear insertion.</p>
-  <p>Future work focuses on enhancing device compatibility and further minimizing insertion trauma through anatomical adaptability and machine learning integration.</p>
-</div>
-
-<div class="research">
-  <h3>CVRC Undergraduate Research Assistant – Cochlear Implant Modeling</h3>
-  <p>Before joining LSAMP, I contributed to the same cochlear implant project as a research assistant in the CVRC lab. My focus was on foundational modeling, including MRI segmentation, anatomical 3D modeling, and simulation setup.</p>
-  <p>I developed anatomical models using ITK-SNAP, refined them in Blender and SolidWorks, and used MATLAB for visualization. I also built a Python script using Trimesh, NumPy, and Matplotlib to process STL files and explore early path planning strategies.</p>
-</div>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Python, MATLAB, C/C++, Git, Machine Learning (TensorFlow, scikit-learn)</li>
-      <li>SolidWorks, Blender, Fusion 360</li>
-      <li>ITK-SNAP, 3D Slicer, MRI Analysis and Segmentation</li
-      <li>Arduino, Circuit Design, Soldering</li>
-    </ul>
-  </section>
-
-  <section id="resume-contact">
-    <h2>Resume & Contact</h2>
-    <a href="resume.pdf" target="_blank" class="button">View Resume</a>
-    <p>Email: <a href="mailto:mikaelamirranda@gmail.com">mikaelamirranda@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/mikaelamiranda" target="_blank">mikaelamiranda</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/mikaelamiranda" target="_blank">linkedin.com/in/mikaelamiranda</a></p>
+  <section>
+    <iframe id="content-frame" src=""></iframe>
   </section>
 
   <footer>
