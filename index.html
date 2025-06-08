@@ -3,103 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mikaela Miranda | Computer Engineering student passionate about assistive tech, cochlear implant research, and biomedical innovation." />
   <title>Mikaela Miranda | Engineering Portfolio</title>
   <style>
-    html { scroll-behavior: smooth; }
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #fff0f5; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #333;
+    }
     header {
-      background: #f78fb3;
-      color: white;
+      background: linear-gradient(to right, #ffc0cb, #ffffff);
+      color: #333;
       padding: 2rem;
       text-align: center;
     }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
     nav {
-      background: #f78fb3;
-      padding: 1rem;
       text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+      background: #f8f8f8;
+      padding: 1rem;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
     }
     nav a {
-      color: white;
-      margin: 0 1rem;
+      color: #333;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
-    nav a:hover {
-      text-decoration: underline;
-      color: #fff0f5;
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 192, 203, 0.1);
     }
     section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-      background: white;
-      margin-top: 2rem;
-      border-radius: 8px;
+      margin-bottom: 2rem;
     }
-    h1, h2, h3 {
-      color: #1f2937;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    .project, .research {
-      margin-bottom: 1.5rem;
-    }
-    a.button {
-      background: #f78fb3;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 6px;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 1rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #f78fb3;
-      color: white;
-    }
-    iframe {
-      width: 100%;
-      height: 80vh;
-      border: none;
+    h2 {
+      color: #d36c85;
     }
   </style>
-  <script>
-    function loadSection(section) {
-      document.getElementById("content-frame").src = section + ".html";
-    }
-    window.onload = function () {
-      loadSection("about");
-    };
-  </script>
 </head>
 <body>
   <header>
     <h1>Mikaela Miranda</h1>
-    <p>Computer Engineering Student | Cal State University Long Beach </p>
+    <p>Computer Engineering Student | Researcher | Assistive Tech Innovator</p>
   </header>
 
   <nav>
-    <a href="#" onclick="loadSection('about')">About Me</a>
-    <a href="#" onclick="loadSection('projects')">Projects</a>
-    <a href="#" onclick="loadSection('research')">Research</a>
-    <a href="#" onclick="loadSection('skills')">Skills</a>
-    <a href="#" onclick="loadSection('awards')">Awards</a>
-    <a href="#" onclick="loadSection('resume')">Contact</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <section>
-    <iframe id="content-frame" src=""></iframe>
-  </section>
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm Mikaela Miranda, a second-year Computer Engineering student at Cal State Long Beach and an LSAMP Research Fellow. I'm passionate about designing accessible assistive technology, with a focus on cochlear implants and hearing science. My work bridges biomedical engineering and machine learning to improve surgical planning and patient education. Currently, I'm developing a path-planning algorithm and validating it using physical models I designed and printed myself. I'm driven by my own experiences with hearing devices and a strong desire to make innovation more inclusive and impactful.
+      </p>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Mikaela Miranda. All rights reserved.</p>
-  </footer>
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Project previews coming soon...</p>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <p><a href="resume.pdf" target="_blank">Download my PDF resume</a></p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:mikaelamiranda@gmail.com">mikaelamiranda@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/mikaelamiranda" target="_blank">linkedin.com/in/mikaelamiranda</a></p>
+      <p>GitHub: <a href="https://github.com/mikaelamiranda" target="_blank">github.com/mikaelamiranda</a></p>
+    </section>
+  </div>
 </body>
 </html>
