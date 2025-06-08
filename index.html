@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mikaela Miranda | Computer Engineering student passionate about assistive tech, cochlear implant research, and biomedical innovation." />
-  <title>Mikaela Miranda | Engineering Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mikaela Miranda | Computer Engineering student passionate about assistive tech, cochlear implant research, and biomedical innovation.">
+  <title>Mikaela Miranda | Home</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -15,16 +15,17 @@
     }
     header {
       background: linear-gradient(to right, #ffc0cb, #ffffff);
-      color: #333;
-      padding: 2rem;
+      padding: 4rem 2rem;
       text-align: center;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 3rem;
+      color: #333;
     }
     header p {
       font-size: 1.2rem;
+      margin-top: 0.5rem;
     }
     nav {
       text-align: center;
@@ -38,18 +39,52 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .container {
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 2rem;
+      background: #fff;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #d36c85;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      text-align: center;
+      line-height: 1.6;
+    }
+    .cta-buttons {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #d36c85;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #b35973;
+    }
+    .section {
       max-width: 900px;
       margin: 2rem auto;
       padding: 1rem;
-      background: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(255, 192, 203, 0.1);
     }
-    section {
-      margin-bottom: 2rem;
-    }
-    h2 {
+    .section h3 {
+      font-size: 1.5rem;
       color: #d36c85;
     }
     .contact-info a {
@@ -65,28 +100,34 @@
   </header>
 
   <nav>
-    <a href="#about">About</a>
+    <a href="index.html">Home</a>
     <a href="projects.html">Projects</a>
-    <a href="Awards & Certifications.html">Awards & Certifications</a>
+    <a href="awards-and-certifications.html">Awards & Certifications</a>
   </nav>
 
-  <div class="container">
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Hi! I'm Mikaela Miranda, a second-year Computer Engineering student at Cal State Long Beach and an LSAMP Research Fellow. I'm passionate about designing accessible assistive technology, with a focus on cochlear implants and hearing science. My work bridges biomedical engineering and machine learning to improve surgical planning and patient education. Currently, I'm developing a path-planning algorithm and validating it using physical models I designed and printed myself. I'm driven by my own experiences with hearing devices and a strong desire to make innovation more inclusive and impactful.
-      </p>
+  <div class="hero">
+    <h2>My Objective</h2>
+    <p>
+      To contribute to the development of inclusive and life-changing biomedical technologies by integrating machine learning, software engineering, and user-centered design. My goal is to improve the safety and accessibility of hearing solutions, including cochlear implants, through thoughtful research and impactful engineering.
+    </p>
 
-      <h3>Resume</h3>
-      <p><a href="resume.pdf" target="_blank">Download my PDF resume</a></p>
+    <div class="cta-buttons">
+      <a href="projects.html" class="cta-button">View Projects</a>
+      <a href="awards-and-certifications.html" class="cta-button">Awards & Certifications</a>
+      <a href="mailto:mikaelamiranda@gmail.com" class="cta-button">Let's Work Together</a>
+    </div>
+  </div>
 
-      <h3>Contact</h3>
-      <div class="contact-info">
-        <p>Email: <a href="mailto:mikaelamiranda@gmail.com">mikaelamiranda@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/mikaelamiranda" target="_blank">linkedin.com/in/mikaelamiranda</a></p>
-        <p>GitHub: <a href="https://github.com/mikaelamiranda" target="_blank">github.com/mikaelamiranda</a></p>
-      </div>
-    </section>
+  <div class="section">
+    <h3>Resume</h3>
+    <p><a href="resume.pdf" target="_blank">Download my PDF resume</a></p>
+
+    <h3>Contact</h3>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:mikaelamiranda@gmail.com">mikaelamiranda@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/mikaelamiranda" target="_blank">linkedin.com/in/mikaelamiranda</a></p>
+      <p>GitHub: <a href="https://github.com/mikaelamiranda" target="_blank">github.com/mikaelamiranda</a></p>
+    </div>
   </div>
 </body>
 </html>
