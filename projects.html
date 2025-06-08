@@ -7,7 +7,7 @@
   <title>Projects | Mikaela Miranda</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
       background: #ffffff;
@@ -16,12 +16,12 @@
     header {
       background: linear-gradient(to right, #ffc0cb, #ffffff);
       color: #333;
-      padding: 2rem;
+      padding: 3rem 2rem;
       text-align: center;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
     }
     nav {
       text-align: center;
@@ -36,32 +36,32 @@
       font-weight: bold;
     }
     .container {
-      max-width: 900px;
+      max-width: 960px;
       margin: 2rem auto;
-      padding: 1rem;
+      padding: 2rem;
       background: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(255, 192, 203, 0.1);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(255, 192, 203, 0.15);
     }
     .project {
-      border: 1px solid #eee;
-      border-radius: 12px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      background: #fafafa;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+      border-left: 4px solid #d36c85;
+      border-radius: 10px;
+      padding: 1.5rem 1.8rem;
+      margin-bottom: 2rem;
+      background: #fdfdfd;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.025);
       transition: transform 0.2s ease;
     }
     .project:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+      transform: translateY(-5px);
     }
     .project h3 {
       margin-top: 0;
-      color: #333;
+      color: #d36c85;
+      font-size: 1.5rem;
     }
     .project p {
-      margin: 0.5rem 0;
+      line-height: 1.6;
     }
     .project a {
       color: #007acc;
@@ -75,7 +75,7 @@
 </head>
 <body>
   <header>
-    <h1>Projects</h1>
+    <h1>Highlighted Projects</h1>
   </header>
 
   <nav>
@@ -87,37 +87,20 @@
   <div class="container">
     <div class="project">
       <h3>ML-Based Cochlear Implant Path Planning</h3>
-      <p>Enhanced MATLAB-based algorithm with Python and machine learning to optimize cochlear implant trajectories. Collected physical data using 3D-printed bone models and guide wires.</p>
-      <p><strong>Tools:</strong> MATLAB, Python, SolidWorks, ITK-SNAP</p>
+      <p>Expanded a MATLAB-based cochlear implant simulation algorithm by incorporating Python and machine learning. Integrated 3D-printed temporal bone models and sensor-instrumented guide wires to collect real-world insertion data. This hybrid model supports data-driven optimization for surgical path accuracy and patient-specific risk reduction.</p>
+      <p><strong>Tools:</strong> MATLAB, Python, SolidWorks, ITK-SNAP, 3D Printing</p>
     </div>
 
     <div class="project">
-      <h3>3D Anatomical Ear Model</h3>
-      <p>Constructed a segmented 3D ear model from MRI data for use in surgical planning and educational tools.</p>
+      <h3>3D Anatomical Ear Model for Surgical Education</h3>
+      <p>Segmented MRI scans using ITK-SNAP and built a detailed anatomical ear model including the cochlea, skull base, and auditory canal. Assembled and printed using SolidWorks for patient and clinical education. The model was deployed as part of a surgical planning and outreach initiative.</p>
       <p><a href="ear_final.zip" target="_blank">View My Completed Model</a></p>
     </div>
 
     <div class="project">
-      <h3>Hydraulic Arm</h3>
-      <p>Built a 3-joint hydraulic arm with pressure sensors for real-time response and manipulation of objects up to 6 lbs.</p>
-    </div>
-
-    <div class="project">
-      <h3>Audio Synthesizer</h3>
-      <p>Created a pitch-modulating audio device using proximity sensors and soldered circuitry for interactive audio effects.</p>
-    </div>
-
-    <div class="project">
-      <h3>Robotics Team Lead</h3>
-      <p><strong>Institution:</strong> Irvine Valley College</p>
-      <p>Designed and constructed a competition robot using CAD and CNC fabrication, managing full mechanical development.</p>
+      <h3>Robotics Team Lead – Autonomous Launcher</h3>
+      <p>Led the mechanical design of a competition robot featuring an autonomous launching mechanism. Collaborated with cross-functional teams to integrate electrical and software systems, and used CNC fabrication to construct a structurally optimized frame.</p>
       <p><a href="https://drive.google.com/drive/folders/1M2K021xyKlsWsI8Tixtqx7eg3LzVrW-W?usp=sharing" target="_blank">View Robot</a></p>
-    </div>
-
-    <div class="project">
-      <h3>Software Engineer – Nonprofit</h3>
-      <p><strong>Organization:</strong> Power to BIPOC</p>
-      <p>Developed accessible web interfaces and ran usability testing to improve engagement with underserved communities.</p>
     </div>
   </div>
 </body>
