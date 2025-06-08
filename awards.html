@@ -1,49 +1,158 @@
-<section class="section" id="awards">
-  <h2 style="font-size: 2.25rem; font-weight: 700; text-align: center; margin-bottom: 2rem; color: #222;">Awards & Certifications</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Awards & Certifications | Mikaela Miranda – Biomedical Researcher and Assistive Tech Innovator">
+  <title>Awards & Certifications</title>
+  <style>
+    :root {
+      --accent: #d36c85;
+      --light-accent: #fbe4e8;
+      --dark: #222;
+      --font: 'Segoe UI', sans-serif;
+    }
 
-  <div style="display: flex; flex-direction: column; gap: 2rem;">
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: #ffffff;
+      color: var(--dark);
+    }
 
-    <!-- Card 1 -->
-    <div style="background: #fff; padding: 1.5rem 2rem; border-radius: 16px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);">
-      <h3 style="color: #d36c85; font-size: 1.4rem; margin: 0;">NSF LSAMP Research Fellowship</h3>
-      <p style="margin-top: 0.5rem; font-size: 1rem; line-height: 1.6;">
-        Awarded for research on machine learning-based cochlear implant simulations. Recognized under the National Science Foundation’s Louis Stokes Alliance for Minority Participation program. <strong>(2025)</strong>
-      </p>
+    header {
+      background: linear-gradient(to right, var(--light-accent), #ffffff);
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #fafafa;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 2.25rem;
+      color: var(--dark);
+      margin-bottom: 2.5rem;
+    }
+
+    .award-card {
+      background: #fff;
+      padding: 1.5rem 2rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+      margin-bottom: 2rem;
+    }
+
+    .award-card h3 {
+      font-size: 1.4rem;
+      color: var(--accent);
+      margin: 0;
+    }
+
+    .award-card p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #f5f5f5;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Awards & Certifications</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="awards.html">Awards</a>
+  </nav>
+
+  <section class="section" id="awards">
+    <h2>Awards & Certifications</h2>
+
+    <div style="display: flex; flex-direction: column; gap: 2rem;">
+
+      <div class="award-card">
+        <h3>NSF LSAMP Research Fellowship</h3>
+        <p>
+          Awarded for research on machine learning-based cochlear implant simulations. Recognized under the National Science Foundation’s Louis Stokes Alliance for Minority Participation program. <strong>(2025)</strong>
+        </p>
+      </div>
+
+      <div class="award-card">
+        <h3>CSU STEM Pathways Research Scholar</h3>
+        <p>
+          Selected for California State University's competitive research training in biomedical and computational modeling as part of a statewide STEM equity initiative. <strong>(2025)</strong>
+        </p>
+      </div>
+
+      <div class="award-card">
+        <h3>CITI Certification</h3>
+        <p>
+          Completed official certification in Responsible Conduct of Research for biomedical innovation, including ethical handling of data and human subject research. <strong>(2025)</strong>
+        </p>
+      </div>
+
+      <div class="award-card">
+        <h3>OURS Connect Research Certificate</h3>
+        <p>
+          Certification for participation in a faculty-mentored research program offering multi-level mentorship, research training, academic credit or compensation, and professional development. <strong>(2023–2027)</strong>
+        </p>
+      </div>
+
+      <div class="award-card">
+        <h3>HTF Foundation Academic Scholarship</h3>
+        <p>
+          Four-year academic scholarship recognizing engineering achievement, commitment to inclusive design, and dedication to underserved communities in assistive technology. <strong>(2023–2027)</strong>
+        </p>
+      </div>
+
     </div>
+  </section>
 
+  <footer>
+    &copy; 2025 Mikaela Miranda. All rights reserved.
+  </footer>
 
-    <!-- Card 2 -->
-    <div style="background: #fff; padding: 1.5rem 2rem; border-radius: 16px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);">
-      <h3 style="color: #d36c85; font-size: 1.4rem; margin: 0;">CSU STEM Pathways Research Scholar</h3>
-      <p style="margin-top: 0.5rem; font-size: 1rem; line-height: 1.6;">
-        Selected for California State University's competitive research training in biomedical and computational modeling as part of a statewide STEM equity initiative.<strong>(2025)</strong>
-      </p>
-    </div>
-    
-      <!-- Card 3 -->
-    <div style="background: #fff; padding: 1.5rem 2rem; border-radius: 16px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);">
-      <h3 style="color: #d36c85; font-size: 1.4rem; margin: 0;">CITI Certification</h3>
-      <p style="margin-top: 0.5rem; font-size: 1rem; line-height: 1.6;">
-        Completed official certification in Responsible Conduct of Research for biomedical innovation, including ethical handling of data and human subject research.<strong>(2025)</strong>
-      </p>
-    </div>
-
-     <!-- Card 5  -->
-    <div style="background: #fff; padding: 1.5rem 2rem; border-radius: 16px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);">
-      <h3 style="color: #d36c85; font-size: 1.4rem; margin: 0;">OURS Connect Research Certificate</h3>
-      <p style="margin-top: 0.5rem; font-size: 1rem; line-height: 1.6;">
-        Certification for participation in a faculty-mentored research program offering multi-level mentorship, research training, academic credit or compensation, and professional development.<strong>(2023-2027)</strong>
-      </p>
-    </div>
-    
-    <!-- Card 4  -->
-    <div style="background: #fff; padding: 1.5rem 2rem; border-radius: 16px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);">
-      <h3 style="color: #d36c85; font-size: 1.4rem; margin: 0;">HTF Foundation Academic Scholarship</h3>
-      <p style="margin-top: 0.5rem; font-size: 1rem; line-height: 1.6;">
-        Four-year academic scholarship recognizing engineering achievement, commitment to inclusive design, and dedication to underserved communities in assistive technology.<strong>(2023-2027)</strong>
-      </p>
-    </div>
-
-      
-  </div>
-</section>
+</body>
+</html>
