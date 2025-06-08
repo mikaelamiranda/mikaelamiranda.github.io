@@ -1,34 +1,124 @@
-<section id="projects">
-  <h2>Personal Projects</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mikaela Miranda's Engineering Projects" />
+  <title>Projects | Mikaela Miranda</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #ffc0cb, #ffffff);
+      color: #333;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      text-align: center;
+      background: #f8f8f8;
+      padding: 1rem;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    }
+    nav a {
+      color: #333;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 192, 203, 0.1);
+    }
+    .project {
+      border: 1px solid #eee;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      background: #fafafa;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+      transition: transform 0.2s ease;
+    }
+    .project:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    }
+    .project h3 {
+      margin-top: 0;
+      color: #333;
+    }
+    .project p {
+      margin: 0.5rem 0;
+    }
+    .project a {
+      color: #007acc;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .project a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Projects</h1>
+  </header>
 
-  <div class="project">
-    <h3>3D Anatomical Ear Model</h3>
-    <p>Created a 3D anatomical model of the ear, skull segment, and auditory canal by segmenting patient imaging data in ITK-SNAP and integrating components using SolidWorks for clinical visualization and surgical planning.</p>
- <p><a href="ear_final.zip" target="_blank" style="color: #007acc;">View My Completed Model</a></p>
-  </div>
-  
-  <div class="project">
-    <h3>Hydraulic Arm</h3>
-    <p>Engineered a 3-joint hydraulic arm equipped with pressure sensors to achieve precise object manipulation up to 6 lbs.</p>
-  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="awards-and-certifications.html">Awards & Certifications</a>
+  </nav>
 
-  <div class="project">
-    <h3>Audio Synthesizer</h3>
-    <p>Designed and soldered electronic circuits for an audio synthesizer, incorporating sensors for pitch modulation based on object proximity. </p>
-  </div>
-  
- <div class="project">
-    <h3>Robotics Team Lead</h3>
-    <p><strong>Institution:</strong> Irvine Valley College</p>
-    <p>Led the mechanical design and construction of a competitive robot. Designed the robot skeleton and launching mechanism using CAD tools, calculated specifications for electrical integration, and oversaw both design and assembly phases.</p>
-    <p><a href="https://drive.google.com/drive/folders/1M2K021xyKlsWsI8Tixtqx7eg3LzVrW-W?usp=sharing" target="_blank" style="color: #007acc;"> View Robot</a></p>
-</div>
- </div>
+  <div class="container">
+    <div class="project">
+      <h3>ML-Based Cochlear Implant Path Planning</h3>
+      <p>Enhanced MATLAB-based algorithm with Python and machine learning to optimize cochlear implant trajectories. Collected physical data using 3D-printed bone models and guide wires.</p>
+      <p><strong>Tools:</strong> MATLAB, Python, SolidWorks, ITK-SNAP</p>
+    </div>
 
-  <div class="project">
-    <h3>Software Engineer</h3>
-    <p><strong>Organization:</strong> Power to BIPOC (Nonprofit)</p>
-    <p>Developed and tested user-facing web applications for a nonprofit organization. Used HTML to build accessible interfaces and conducted extensive QA testing to ensure site performance and usability.</p>
-  </div>
+    <div class="project">
+      <h3>3D Anatomical Ear Model</h3>
+      <p>Constructed a segmented 3D ear model from MRI data for use in surgical planning and educational tools.</p>
+      <p><a href="ear_final.zip" target="_blank">View My Completed Model</a></p>
+    </div>
 
-</section>
+    <div class="project">
+      <h3>Hydraulic Arm</h3>
+      <p>Built a 3-joint hydraulic arm with pressure sensors for real-time response and manipulation of objects up to 6 lbs.</p>
+    </div>
+
+    <div class="project">
+      <h3>Audio Synthesizer</h3>
+      <p>Created a pitch-modulating audio device using proximity sensors and soldered circuitry for interactive audio effects.</p>
+    </div>
+
+    <div class="project">
+      <h3>Robotics Team Lead</h3>
+      <p><strong>Institution:</strong> Irvine Valley College</p>
+      <p>Designed and constructed a competition robot using CAD and CNC fabrication, managing full mechanical development.</p>
+      <p><a href="https://drive.google.com/drive/folders/1M2K021xyKlsWsI8Tixtqx7eg3LzVrW-W?usp=sharing" target="_blank">View Robot</a></p>
+    </div>
+
+    <div class="project">
+      <h3>Software Engineer – Nonprofit</h3>
+      <p><strong>Organization:</strong> Power to BIPOC</p>
+      <p>Developed accessible web interfaces and ran usability testing to improve engagement with underserved communities.</p>
+    </div>
+  </div>
+</body>
+</html>
